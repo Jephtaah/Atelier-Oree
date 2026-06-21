@@ -1,0 +1,6 @@
+{
+  "name": "Luxury Fashion Landing Page",
+  "description": "An immersive and highly sophisticated editorial luxury fashion landing page featuring warm tones, serif typography, and dynamic layered imagery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
