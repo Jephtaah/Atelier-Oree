@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 import { ArrowDown, Flame, Sparkles } from "lucide-react";
+import { IMAGES } from "../assets/images";
 
 interface HeroSectionProps {
   onExploreClick: () => void;
@@ -138,7 +139,7 @@ export default function HeroSection({ onExploreClick, onBespokeClick }: HeroSect
           >
             <div className="w-full h-full overflow-hidden relative">
               <img
-                src="/src/assets/images/luxury_hero_pose_1782034357700.jpg"
+                src={IMAGES.luxuryHero}
                 alt="Model wearing Alabaster Flow Dress"
                 className="w-full h-full object-cover grayscale-[15%] group-hover:scale-105 duration-700 transition-transform"
                 referrerPolicy="no-referrer"
@@ -163,7 +164,7 @@ export default function HeroSection({ onExploreClick, onBespokeClick }: HeroSect
           >
             <div className="w-full h-[82%] overflow-hidden relative bg-cream-100">
               <img
-                src="/src/assets/images/brutalist_fashion_motion_1782034375594.jpg"
+                src={IMAGES.brutalistMotion}
                 alt="Travertine Minimal Trench"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 referrerPolicy="no-referrer"
@@ -189,7 +190,7 @@ export default function HeroSection({ onExploreClick, onBespokeClick }: HeroSect
           >
             <div className="w-full h-[82%] overflow-hidden relative bg-cream-100">
               <img
-                src="/src/assets/images/burgundy_editorial_sitting_1782034388360.jpg"
+                src={IMAGES.burgundyEditorial}
                 alt="Burgundy Sculptural Solitaire"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 referrerPolicy="no-referrer"
@@ -207,7 +208,7 @@ export default function HeroSection({ onExploreClick, onBespokeClick }: HeroSect
             style={{
               x: mousePosition.x * -0.6,
               y: mousePosition.y * 0.2,
-              backgroundImage: "url('/src/assets/images/editorial_gold_accent_1782034403130.jpg')"
+              backgroundImage: `url('${IMAGES.editorialGoldAccent}')`
             }}
             initial={{ opacity: 0, scale: 0.7 }}
             animate={{ opacity: 1, scale: 1 }}

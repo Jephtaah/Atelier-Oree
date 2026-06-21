@@ -1,4 +1,5 @@
 import { GarmetItem, BoutiqueLocation, MaterialOption } from "./types";
+import { IMAGES } from "./assets/images";
 
 export const PRODUCTS: GarmetItem[] = [
   {
@@ -9,7 +10,7 @@ export const PRODUCTS: GarmetItem[] = [
     fabric: "Mulberry Silk",
     composition: "100% Organic Mulberry Imperial Silk",
     description: "An ethereal silhouette crafted to trace and amplify the wearer's natural cadence and grace. Its gossamer layers fall like architectural water, swaying fluidly with even the softest breath.",
-    imageUrl: "/src/assets/images/luxury_hero_pose_1782034357700.jpg",
+    imageUrl: IMAGES.luxuryHero,
     details: [
       "Individually hand-rolled fine hems",
       "Internal silk georgette lining for opaque elegance",
@@ -30,7 +31,7 @@ export const PRODUCTS: GarmetItem[] = [
     fabric: "Flemish Linen & Cashmere Blend",
     composition: "70% Flemish Long-Staple Flax, 30% Pure Merino Cashmere",
     description: "Honoring clean lines and structural gravity, this oversized silhouette brings a sculpted presence. Structured yet soft, its fabric is treated with dynamic water-repellent biological wax.",
-    imageUrl: "/src/assets/images/brutalist_fashion_motion_1782034375594.jpg",
+    imageUrl: IMAGES.brutalistMotion,
     details: [
       "Oversized notched lapels with deep sculptural backing",
       "Removable broad waist belt with stitched solid brass buckle",
@@ -51,7 +52,7 @@ export const PRODUCTS: GarmetItem[] = [
     fabric: "Siena Crimson Heavy Silk Crêpe",
     composition: "100% Siena Forest-Grown Mulberry Silk Gown",
     description: "An elegant tribute to physical stillness and architectural form. This deep burgundy masterpiece utilizes weight ratios to suspend elegantly from a single asymmetrical shoulder stitch.",
-    imageUrl: "/src/assets/images/burgundy_editorial_sitting_1782034388360.jpg",
+    imageUrl: IMAGES.burgundyEditorial,
     details: [
       "Single-shoulder continuous fabric drape",
       "Asymmetrical bias-cut structure for personalized contour mapping",
@@ -72,7 +73,7 @@ export const PRODUCTS: GarmetItem[] = [
     fabric: "Full-Grain Natural Vachetta Calfskin",
     composition: "Vegetable-tanned leather lined with fine linen",
     description: "An architectural ornament designed to accompany motion. Accentuated by a solid hand-forged brass raw-edge clasp that patinas uniquely to chronicle the keeper's personal travels.",
-    imageUrl: "/src/assets/images/editorial_gold_accent_1782034403130.jpg",
+    imageUrl: IMAGES.editorialGoldAccent,
     details: [
       "Solid hand-forged untreated raw brass hardware",
       "Flesh-side raw interior lining with linen slot details",

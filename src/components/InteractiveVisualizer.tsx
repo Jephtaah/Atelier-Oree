@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { BRASS_MATERIALS, SILHOUETTES } from "../data";
+import { IMAGES } from "../assets/images";
 import { motion, AnimatePresence } from "motion/react";
 import { Check, Info, Sparkles, ShoppingBag } from "lucide-react";
 import { GarmetItem } from "../types";
@@ -58,8 +59,8 @@ export default function InteractiveVisualizer({ onAddToBag }: InteractiveVisuali
       composition: `${selectedMaterial.weight} of ${selectedMaterial.name}`,
       description: `A commissioned personal masterwork. Specially tailored of ${selectedMaterial.name} in Milan. Commissioned accents of ${selectedAccent.name} with custom direct silk hand-monogram: "${monogram.toUpperCase()}".`,
       imageUrl: selectedSilhouette.id === "sil-dress"
-        ? "/src/assets/images/luxury_hero_pose_1782034357700.jpg"
-        : "/src/assets/images/brutalist_fashion_motion_1782034375594.jpg",
+        ? IMAGES.luxuryHero
+        : IMAGES.brutalistMotion,
       details: [
         `Custom hand-engraved hardware in ${selectedAccent.name}`,
         `Direct gold-silk hand chain-stitch monogram "${monogram.toUpperCase()}"`,
